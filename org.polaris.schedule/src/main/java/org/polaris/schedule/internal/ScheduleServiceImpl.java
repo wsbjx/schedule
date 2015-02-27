@@ -8,9 +8,9 @@ import javax.annotation.Resource;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.polaris.schedule.ScheduleItem;
 import org.polaris.schedule.ScheduleService;
 import org.polaris.schedule.meta.ScheduleConfig;
-import org.polaris.schedule.meta.ScheduleResult;
 import org.polaris.schedule.meta.Staff;
 import org.springframework.stereotype.Service;
 
@@ -23,7 +23,7 @@ public class ScheduleServiceImpl implements ScheduleService
 	private ScheduleConfig scheduleConfig;
 
 	@Override
-	public ScheduleResult schedule(long startTime, long endTime)
+	public ScheduleItem[] schedule(long startTime, long endTime)
 	{
 		// 创建上下文
 		ScheduleContext context = new ScheduleContext(startTime, endTime);
@@ -54,7 +54,7 @@ public class ScheduleServiceImpl implements ScheduleService
 		{
 			log.info(scheduleItem);
 		}
-		return null;
+		return scheduleItems;
 	}
 
 	/**

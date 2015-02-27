@@ -1,7 +1,5 @@
 package org.polaris.schedule;
 
-import org.polaris.schedule.meta.ScheduleResult;
-
 /**
  * 排班服务
  * 
@@ -10,5 +8,5 @@ import org.polaris.schedule.meta.ScheduleResult;
  */
 public interface ScheduleService
 {
-	ScheduleResult schedule(long startTime, long endTime);
+	ScheduleItem[] schedule(long startTime, long endTime);
 }

@@ -1,4 +1,4 @@
-package org.polaris.schedule.internal;
+package org.polaris.schedule;
 
 import java.util.Date;
 import java.util.HashSet;
@@ -13,7 +13,7 @@ import org.polaris.schedule.meta.Staff;
  * @author wang.sheng
  * 
  */
-class ScheduleItem
+public final class ScheduleItem
 {
 	private long time;
 	private Set<Staff> morningSet = new HashSet<Staff>();

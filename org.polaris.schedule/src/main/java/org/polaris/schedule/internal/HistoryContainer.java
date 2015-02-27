@@ -3,6 +3,8 @@ package org.polaris.schedule.internal;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.polaris.schedule.ScheduleItem;
+
 /**
  * 历史分配容器
  * 
