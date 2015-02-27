@@ -11,7 +11,9 @@ public class Test
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:conf/spring/*.xml");
 		ScheduleService scheduleService = applicationContext.getBean(ScheduleService.class);
 		long startTime = System.currentTimeMillis();
-		long endTime = startTime + 30 * 24 * 60 * 60 * 1000L;
-		scheduleService.schedule(startTime, endTime);
+		long endTime = startTime + 61 * 24 * 60 * 60 * 1000L;
+		ScheduleItem[] scheduleItems = scheduleService.schedule(startTime, endTime);
+		RenderService renderService = applicationContext.getBean(RenderService.class);
+		renderService.render(scheduleItems);
 	}
 }
