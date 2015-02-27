@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results startdate="2015-2-27" enddate="2015-4-1">
+	<result date="2015-2-27" morning-staffs="A,B" night-staffs="C,D" workingday="true" />
+	<result date="2015-2-28" morning-staffs="E,F" night-staffs="G,H" workingday="true" />
+	<result date="2015-3-1" morning-staffs="A" night-staffs="C" workingday="false" />
+	<result date="2015-3-2" morning-staffs="E,F" night-staffs="G,H" workingday="true" />
+</results>

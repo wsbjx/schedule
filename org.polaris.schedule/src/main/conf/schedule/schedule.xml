@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule exceptdates="2015-2-18,2015-2-19,2015-2-20,2015-2-21" workingstaff="2" holidaystaff="1">
+	<staff name="A" working-morning="true" working-night="true" holiday-morning="true" holiday-night="true" />
+	<staff name="B" working-morning="true" working-night="true" holiday-morning="true" holiday-night="true" />
+	<staff name="C" working-morning="true" working-night="true" holiday-morning="true" holiday-night="true" />
+	<staff name="D" working-morning="true" working-night="true" holiday-morning="true" holiday-night="true" />
+	<staff name="E" working-morning="true" working-night="true" holiday-morning="true" holiday-night="true" />
+	<staff name="F" working-morning="true" working-night="true" holiday-morning="true" holiday-night="true" />
+	<staff name="G" working-morning="false" working-night="true" holiday-morning="true" holiday-night="true" />
+	<staff name="H" working-morning="false" working-night="true" holiday-morning="true" holiday-night="true" />
+</schedule>
