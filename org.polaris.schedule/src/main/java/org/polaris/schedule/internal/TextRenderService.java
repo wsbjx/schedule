@@ -84,6 +84,15 @@ public class TextRenderService implements RenderService
 			morningList.add(StringUtils.join(scheduleItem.getMorningStaffSet().toArray(), ','));
 			nightList.add(StringUtils.join(scheduleItem.getNightStaffSet().toArray(), ','));
 		}
+		if (!dayList.isEmpty())
+		{
+			Week week = new Week(dayList.toArray(new String[0]), morningList.toArray(new String[0]),
+					nightList.toArray(new String[0]));
+			printWeek(week, buffer);
+			dayList.clear();
+			morningList.clear();
+			nightList.clear();
+		}
 		writeToFile(buffer.toString());
 	}
 
