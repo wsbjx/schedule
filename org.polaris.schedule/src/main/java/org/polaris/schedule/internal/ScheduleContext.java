@@ -11,9 +11,11 @@ import java.util.Calendar;
 class ScheduleContext
 {
 	private static final long DAY_TIME = 24 * 60 * 60 * 1000L;
+	
 	private final Calendar calendar = Calendar.getInstance();
 	private final HistoryContainer historyContainer = new HistoryContainer();
 	private final BalanceContainer balanceContainer = new BalanceContainer();
+	
 	private long endTime;
 
 	public ScheduleContext(long startTime, long endTime)

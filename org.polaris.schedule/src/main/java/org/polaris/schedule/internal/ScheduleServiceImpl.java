@@ -32,11 +32,6 @@ public class ScheduleServiceImpl implements ScheduleService
 		Calendar calendar = context.getCalendar();
 		while (context.hasNextDay())
 		{
-			if (context.getWeek() == 0)
-			{
-				// 星期一进行重置
-				context.getBalanceContainer().reset();
-			}
 			boolean holiday = this.isHoliday(calendar);
 			ScheduleItem todayScheduleItem = new ScheduleItem(calendar.getTimeInMillis(), holiday);
 			if (holiday)
