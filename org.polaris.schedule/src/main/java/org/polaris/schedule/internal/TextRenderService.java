@@ -99,7 +99,7 @@ public class TextRenderService implements RenderService
 	private void printWeek(Week week, StringBuffer buffer)
 	{
 		int length = week.getDays().length;
-		buffer.append("日期|\t\t");
+		buffer.append("\n日期|\t\t");
 		for (int i = 0; i < length; i++)
 		{
 			buffer.append(week.getDays()[i]).append("\t\t");
