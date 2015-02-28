@@ -17,7 +17,7 @@
 
 	<bean id="scheduleConfig" class="org.polaris.schedule.internal.ScheduleConfigFactoryBean">
 		<property name="xmlParseService" ref="xmlParseService" />
-		<property name="resource" value="conf/schedule/schedule.xml" />
+		<property name="resource" value="file:conf/schedule/schedule.xml" />
 	</bean>
 	
 </beans>
